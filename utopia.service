@@ -1,0 +1,11 @@
+[Unit]
+Description=Utopia Bot
+After=network.target
+
+[Service]
+WorkingDirectory=/home/utopia/
+Type=simple
+ExecStart=/bin/bash /home/utopia/startme.sh
+
+[Install]
+WantedBy=multi-user.target
